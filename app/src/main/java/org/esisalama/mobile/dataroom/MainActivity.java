@@ -128,7 +128,9 @@ public class MainActivity extends AppCompatActivity {
         userDeo.insert(user);
         //requette d'insertion
         User bdUser = userDeo.findOne(1);
+
         Toast.makeText(MainActivity.this,user.nom,Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this,user.matricule,Toast.LENGTH_LONG).show();
 
         StringBuilder string = new StringBuilder();
         string.append("bonjour\n");
